@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+#root {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
 html, body {
   background: rgb(230, 230, 230);
   color: #011d2f;
@@ -25,13 +34,13 @@ button {
 }
 
 .start:hover {
-    border: green solid 2px;
+    border: green solid 1px;
 }
 .start:focus {
     color: green;
 }
 .stop:hover {
-    border: red solid 2px;
+    border: red solid 1px;
 }
 .stop:focus {
     color: red;
