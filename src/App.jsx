@@ -31,11 +31,10 @@ function App() {
       setCount(WordCount(text))
     }
   }
-  
+
   function WordCount(str) { 
     return str.trim().split(" ").filter(word => word !== "").length;
   }
-  
 
   function handleClickStart(e) {
       e.preventDefault()
@@ -59,7 +58,7 @@ function App() {
       event.target.value = 0
     }
   }
-
+  
   return (
     <div className="App">
             <h1>How fast do you type?</h1>
@@ -78,8 +77,6 @@ function App() {
                   <button className="start" onClick={handleClickStart}>Start</button>
                   <button className="stop" onClick={handleClickStop}>Stop</button>
                 </div>
-              
-
             </form>
             <h1>Word count: {count}</h1>
     </div>
